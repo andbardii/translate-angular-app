@@ -1,0 +1,41 @@
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div class="col-12 nav p-2">
+      <div class="flex h-100">
+        <div class="bars p-2 rounded-circle" (click)="left = true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#5F6367" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <div class="logo h-100 d-flex align-center">
+          <img src="assets/logo.png" alt="Google logo"> <b class="nome">Traduttore</b>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 pt-5 mt-3">
+      prova
+    </div>
+  </div>
+</div>
+<div class="left" *ngIf="left == true">
+  <div class="top d-flex">
+    <div class="logo h-100 d-flex align-center">
+      <img src="assets/logo.png" alt="Google logo"> <b class="nome">Traduttore</b>
+    </div>
+  </div>
+  <div class="info col-12 p-2 ps-4 pop">
+    <p class="text-decoration-underline">Information on Google Translate</p>
+  </div>
+  <div class="col-12 p-2 ps-4 pop">
+    <p>Privacy and Terms</p>
+  </div>
+  <div class="col-12 p-2 ps-4 pop">
+    <p>Guide</p>
+  </div>
+  <div class="col-12 p-2 ps-4 pop">
+    <p>Send comment</p>
+  </div>
+  <div class="col-12 p-2 ps-4 pop">
+    <p>Information on Google</p>
+  </div>
+</div>
