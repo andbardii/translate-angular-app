@@ -10,6 +10,7 @@ export class BoxComponent implements OnInit{
 
   constructor(){}
 
+
   ngOnInit(): void {
   }
 
