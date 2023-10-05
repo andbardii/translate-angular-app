@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { TransalteService } from '../services/transalte.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-box',
@@ -6,12 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent implements OnInit{
+
+  @ViewChild('f') fform!: NgForm;
+  @ViewChild('s') sform!: NgForm;
+
   left: boolean = false;
 
-  constructor(){}
+  first:string = '';
+  second:string = 'Transalte';
 
+  constructor(private svc:TransalteService){}
 
   ngOnInit(): void {
+    this.translate()
   }
 
+  translate(){
+
+  }
 }

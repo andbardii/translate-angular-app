@@ -61,25 +61,23 @@
           <p class="d-inline grey">Detect language</p>
           <p class="d-inline selecte grey">Italian</p>
           <p class="d-inline grey">English</p>
-          <p class="d-inline grey">German</p>
         </div>
         <div class="col-1 pt-2"></div>
         <div class="col-6 pe-5 pt-2">
           <p class="d-inline grey">Italian</p>
           <p class="d-inline selecte grey">English</p>
-          <p class="d-inline grey">German</p>
         </div>
       </div>
       <div class="row pt-2 px-4">
         <div class="col-6 ps-5 pt-2">
-          <div class="first">
-
-          </div>
+          <form #f="ngForm">
+            <textarea [(ngModel)]="first" class="first p-3" rows="4" cols="50" id="first" name="first"></textarea>
+          </form>
         </div>
         <div class="col-6 pe-5 pt-2">
-          <div class="second">
-
-          </div>
+          <form #s="ngForm">
+            <textarea [(ngModel)]="second" class="second p-3" rows="4" cols="50" id="second" name="second"></textarea>
+          </form>
         </div>
       </div>
       <div class="row pt-5 px-4">
